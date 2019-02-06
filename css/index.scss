@@ -12,7 +12,7 @@ p {
 }
 
 .container {
-    width: 1200px;
+    width: 1150px;
     margin: 0 auto;
 }
 .kagikakko {
@@ -117,6 +117,7 @@ header {
 .enginia-wrapper {
     background-image: url("/img/introbottom.jpg");
     background-size: cover;
+    background-position: center bottom;
     padding-bottom: 200px;
     span {
         background: linear-gradient(transparent 70%, rgb(255, 166, 0) 0%);
@@ -175,5 +176,78 @@ header {
                 }
             }
         }
+    }
+}
+
+.step-wrapper {
+    background-image: url("/img/aboutsecondbg.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    padding: 50px 0;
+    color :white;
+    h2 {
+        padding-top: 10px;
+        font-size: 28px;
+    }
+    h3 {
+        padding: 10px 0;
+        font-size: 20px;
+        line-height: 2;
+        span {
+            color: #ff933a;
+        }
+    }
+    .steps {
+        display: flex;
+        justify-content: center;
+        .step {
+            width: 400px;
+            padding: 30px 40px;
+            border-radius: 5px;
+            background: #fff;
+            color: #000;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+            .step-moji {
+                padding: 0 20px;
+                background: #ffb758;
+                color: #fff;
+                line-height: 26px;
+                font-weight: bold;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+            p {
+                padding-top: 15px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.skillup-wrapper {
+    padding: 40px;
+    color: #fff;
+    background: #3f63ff;
+    font-weight: bold;
+    span {
+        color: #ff933a;
+    }
+}
+
+.manaberu-wrapper {
+    padding: 40px;
+    h2 {
+        font-size: 28px;
+        span {
+            font-size: 20px;
+        }
+    }
+    h3 {
+        padding: 30px 0;
+        font-size: 22px;
+        font-weight: normal;
     }
 }
