@@ -62,22 +62,20 @@ body {
     margin: 0 auto;
 }
 
-#topscroll {
-    $size: 100px;
-    width: $size;
-    height: $size;
-    border-radius: 50%;
-    color: #fff;
-    background: $orange;
+#top_scroll {
+    font-size: 60px;
+    color: #aaa;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 30px;
+    bottom: 100px;
 }
+
 header {
     position: fixed;
     width: 100%;
     background: #fff;
     z-index: 10;
+
     .container {
         width: 100%;
 
@@ -100,14 +98,16 @@ header {
             padding: 10px 15px;
             color: white;
             background: lighten($orange, 10%);
-            display: inline-block;
+
             .fas {
                 font-size: 30px;
             }
+
             span {
                 font-size: 14px;
             }
         }
+
         .inforbtn {
             display: none;
         }
@@ -115,7 +115,7 @@ header {
 }
 
 .top-wrapper {
-    padding: 130px 0 20px;
+    padding: 100px 0 20px;
     background-image: url("/img/main.jpg");
     background-size: cover;
     background-position: center;
@@ -459,19 +459,24 @@ header {
 
 .sansya-wrapper {
     padding: 40px 0;
+
     h2 {
         margin: 10px 0;
     }
+
     p {
         font-size: 14px;
     }
+
     .message-komoji {
         font-size: 12px;
         padding: 20px 0;
     }
+
     .sansyanokore {
         display: flex;
         margin-top: 50px;
+
         img {
             $size: 100px;
             width: $size;
@@ -479,16 +484,77 @@ header {
             object-fit: contain;
             border: 2px solid #3fff7f;
         }
+
         .sansyamessage {
             width: 80%;
             text-align: left;
             padding: 0 5px;
+
             p {
                 font-size: 12px;
-                
+
             }
+
             a {
                 font-size: 12px;
+            }
+        }
+    }
+}
+
+.nagare-wrapper {
+    padding: 40px 0;
+
+    h2 {
+        padding-bottom: 25px;
+        font-weight: bold;
+    }
+
+    .nagare {
+        margin: 10px 0;
+        background: lighten($orange, 40%);
+        border-radius: 8px;
+
+        .top-nagare {
+            overflow: hidden;
+            padding: 10px 20px;
+
+            img {
+                width: 50px;
+                float: left;
+            }
+
+            p {
+                float: left;
+                line-height: 50px;
+                font-weight: bold;
+                padding-left: 20px;
+            }
+
+            i {
+                line-height: 50px;
+                font-size: 30px;
+                float: right;
+            }
+
+            .fa-angle-up {
+                display: none;
+            }
+            .fa-angle-down {
+                // display: none;
+            }
+            .open {
+                transform: rotateZ(180deg);
+            }
+        }
+
+        .bottom-nagare {
+            padding: 0 20px 20px;
+            text-align: left;
+            display: none;
+
+            .weight-font {
+                font-weight: bold;
             }
         }
     }

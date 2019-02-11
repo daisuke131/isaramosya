@@ -74,15 +74,12 @@ body p {
   margin: 0 auto;
 }
 
-#topscroll {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  color: #fff;
-  background: #ff7011;
+#top_scroll {
+  font-size: 60px;
+  color: #aaa;
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 30px;
+  bottom: 100px;
 }
 
 header {
@@ -115,7 +112,6 @@ header .container .contactbtn {
   padding: 10px 15px;
   color: white;
   background: #ff8f44;
-  display: inline-block;
 }
 
 header .container .contactbtn .fas {
@@ -131,7 +127,7 @@ header .container .inforbtn {
 }
 
 .top-wrapper {
-  padding: 130px 0 20px;
+  padding: 100px 0 20px;
   background-image: url("/img/main.jpg");
   background-size: cover;
   background-position: center;
@@ -500,4 +496,60 @@ header .container .inforbtn {
 
 .sansya-wrapper .sansyanokore .sansyamessage a {
   font-size: 12px;
+}
+
+.nagare-wrapper {
+  padding: 40px 0;
+}
+
+.nagare-wrapper h2 {
+  padding-bottom: 25px;
+  font-weight: bold;
+}
+
+.nagare-wrapper .nagare {
+  margin: 10px 0;
+  background: #ffebdd;
+  border-radius: 8px;
+}
+
+.nagare-wrapper .nagare .top-nagare {
+  overflow: hidden;
+  padding: 10px 20px;
+}
+
+.nagare-wrapper .nagare .top-nagare img {
+  width: 50px;
+  float: left;
+}
+
+.nagare-wrapper .nagare .top-nagare p {
+  float: left;
+  line-height: 50px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.nagare-wrapper .nagare .top-nagare i {
+  line-height: 50px;
+  font-size: 30px;
+  float: right;
+}
+
+.nagare-wrapper .nagare .top-nagare .fa-angle-up {
+  display: none;
+}
+
+.nagare-wrapper .nagare .top-nagare .open {
+  transform: rotateZ(180deg);
+}
+
+.nagare-wrapper .nagare .bottom-nagare {
+  padding: 0 20px 20px;
+  text-align: left;
+  display: none;
+}
+
+.nagare-wrapper .nagare .bottom-nagare .weight-font {
+  font-weight: bold;
 }
