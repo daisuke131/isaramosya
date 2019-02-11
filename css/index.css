@@ -74,35 +74,64 @@ body p {
   margin: 0 auto;
 }
 
-header {
-  background: #fff;
-  width: 100%;
-  z-index: 10;
-  overflow: hidden;
-}
-
-header img {
+#topscroll {
   width: 100px;
-  float: left;
+  height: 100px;
+  border-radius: 50%;
+  color: #fff;
+  background: #ff7011;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
 }
 
-header p {
-  float: left;
+header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+}
+
+header .container {
+  width: 100%;
+}
+
+header .container img {
+  width: 100px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+header .container p {
+  top: 10px;
+  left: 10px;
+  position: absolute;
   font-size: 12px;
 }
 
-header .inforbtn {
+header .container .contactbtn {
   float: right;
-  background: #ff7011;
-  font-size: 16px;
-  color: #fff;
+  padding: 10px 15px;
+  color: white;
+  background: #ff8f44;
   display: inline-block;
-  padding: 20px 45px;
-  border-radius: 30px;
+}
+
+header .container .contactbtn .fas {
+  font-size: 30px;
+}
+
+header .container .contactbtn span {
+  font-size: 14px;
+}
+
+header .container .inforbtn {
+  display: none;
 }
 
 .top-wrapper {
-  padding: 20px 0;
+  padding: 130px 0 20px;
   background-image: url("/img/main.jpg");
   background-size: cover;
   background-position: center;
