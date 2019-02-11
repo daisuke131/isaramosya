@@ -39,34 +39,291 @@
 
 @media (min-width: 912px) {
 
-  .container {
-    width: 820px;
-  }
-
-  #open_menu {
-    display: none;
-  }
-
-  #close_menu {
-    display: none;
-  }
-
-  #menu {
-    display: block;
-    position: static;
-    background: transparent;
-    color: #333;
-  }
-
-  #menu ul {
-    padding: 0;
-    float: right;
-  }
-
-  #menu li {
-    display: inline-block;
-    width: 60px;
+  body {
+    font-size: 22px;
+    // letter-spacing: 3;
+    // line-height: 35px;
+    // font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
     text-align: center;
   }
 
+  .container {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
+  .kagikakko {
+    width: 800px;
+    margin: 40px 0;
+    padding: 35px 0px;
+    font-size: 28px;
+    letter-spacing: 1;
+    position: relative;
+    display: inline-block;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      position: absolute;
+    }
+
+    &::before {
+      border-left: solid 4px #ff6889;
+      border-top: solid 4px #ff6889;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      border-right: solid 4px #ff6889;
+      border-bottom: solid 4px #ff6889;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    // height: 80px;
+    z-index: 10;
+    overflow: hidden;
+    padding: 20px 0;
+
+    .container {
+      width: 1200px;
+
+      img {
+        float: left;
+        width: 150px;
+      }
+
+      p {
+        float: left;
+        font-size: 14px;
+      }
+
+      .inforbtn {
+        float: right;
+        background: red;
+        font-size: 16px;
+        color: #fff;
+        display: inline-block;
+        padding: 20px 45px;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  .top-wrapper {
+    padding-top: 60px;
+    background-image: url("/img/main.jpg");
+    background-size: cover;
+
+    h1 {
+      padding: 80px 0 20px;
+      letter-spacing: 3px;
+      line-height: 1.5;
+      font-weight: none;
+    }
+
+    img {
+      width: 310px;
+    }
+
+    p {
+      font-size: 20px;
+      padding: 20px 0 60px;
+    }
+  }
+
+  .info-wrapper {
+    background: #ff6889;
+    color: #fff;
+    padding: 40px 0;
+
+    p {
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .siroaka {
+      background: #fff;
+      color: red;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .infobtn-bg {
+      background: #ff0505;
+      border-radius: 50px;
+      padding: 25px 0;
+      font-size: 25px;
+      margin: 40px 0;
+    }
+  }
+
+  .enginia-wrapper {
+    background-image: url("/img/introbottom.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    padding-bottom: 200px;
+
+    span {
+      background: linear-gradient(transparent 70%, rgb(255, 166, 0) 0%);
+    }
+  }
+
+  .about-wrapper {
+    position: relative;
+    background: hsl(54, 100%, 51%);
+    padding: 100px 0 50px;
+
+    .about {
+      $size: 100px;
+      width: $size;
+      height: $size;
+      line-height: $size;
+      border-radius: 50%;
+      display: inline-block;
+      background: hsl(32, 100%, 51%);
+      color: white;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -50px;
+    }
+
+    h2 {
+      box-sizing: border-box;
+      margin: 10px 0;
+    }
+
+    h3 {
+      padding: 20px 0;
+      font-size: 20px;
+    }
+
+    .five-skills {
+      border: 2px solid hsl(32, 100%, 51%);
+      border-radius: 8px;
+      background: #fff;
+
+      .skills {
+        display: flex;
+        justify-content: center;
+
+        // justify-content: space-between;
+        .skill {
+          padding-bottom: 50px;
+
+          &:not(:last-child) {
+            padding-right: 30px;
+          }
+
+          img {
+            width: 75px;
+            height: 75px;
+            object-fit: contain;
+            padding: 10px 0;
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .step-wrapper {
+    background-image: url("/img/aboutsecondbg.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    padding: 50px 0;
+    color: white;
+
+    h2 {
+      padding-top: 10px;
+      font-size: 28px;
+    }
+
+    h3 {
+      padding: 10px 0;
+      font-size: 20px;
+      line-height: 2;
+
+      span {
+        color: #ff933a;
+      }
+    }
+
+    .steps {
+      display: flex;
+      justify-content: center;
+
+      .step {
+        width: 400px;
+        padding: 30px 40px;
+        border-radius: 5px;
+        background: #fff;
+        color: #000;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+
+        .step-moji {
+          padding: 0 20px;
+          background: #ffb758;
+          color: #fff;
+          line-height: 26px;
+          font-weight: bold;
+          border-radius: 5px;
+          font-size: 16px;
+        }
+
+        p {
+          padding-top: 15px;
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .skillup-wrapper {
+    padding: 40px;
+    color: #fff;
+    background: #3f63ff;
+    font-weight: bold;
+
+    span {
+      color: #ff933a;
+    }
+  }
+
+  .manaberu-wrapper {
+    padding: 40px;
+
+    h2 {
+      font-size: 28px;
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    h3 {
+      padding: 30px 0;
+      font-size: 22px;
+      font-weight: normal;
+    }
+  }
 }
