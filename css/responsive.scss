@@ -1,39 +1,6 @@
 /* medium screens */
 
-@media (min-width: 570px) {
-
-  .feature img {
-    width: 50%;
-  }
-
-  .feature p {
-    width: 45%;
-  }
-
-  .feature:nth-of-type(odd) p {
-    float: right;
-    padding-left: 5%;
-  }
-
-  .feature:nth-of-type(even) p {
-    float: left;
-    padding-right: 5%;
-  }
-
-  .feature {
-    overflow: hidden;
-  }
-
-  .news .flex {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .news-item {
-    width: 30%;
-  }
-
-}
+@media (min-width: 570px) {}
 
 /* large screens */
 
@@ -41,15 +8,23 @@
 
   body {
     font-size: 22px;
-    // letter-spacing: 3;
-    // line-height: 35px;
-    // font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
-    text-align: center;
+
+    h2 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 20px;
+    }
   }
 
   .container {
     width: 1150px;
     margin: 0 auto;
+  }
+
+  .kaigyou {
+    display: none;
   }
 
   .kagikakko {
@@ -85,49 +60,48 @@
   }
 
   header {
-    position: fixed;
-    background: #fff;
-    width: 100%;
-    // height: 80px;
-    z-index: 10;
     overflow: hidden;
-    padding: 20px 0;
+    padding: 10px 0;
 
     .container {
-      width: 1200px;
+      width: 1150px;
 
       img {
+        position: relative;
         float: left;
         width: 150px;
+        top: 0px;
+        left: 0px;
       }
 
       p {
+        position: relative;
         float: left;
-        font-size: 14px;
+        line-height: 60px;
       }
 
-      .inforbtn {
+      #contactbtn {
+        display: none;
+      }
+
+      #inforbtn {
         float: right;
         background: red;
         font-size: 16px;
         color: #fff;
         display: inline-block;
-        padding: 20px 45px;
+        padding: 15px 45px;
         border-radius: 30px;
+        cursor: pointer;
       }
     }
   }
 
   .top-wrapper {
-    padding-top: 60px;
-    background-image: url("/img/main.jpg");
-    background-size: cover;
+    padding-top: 140px;
 
-    h1 {
-      padding: 80px 0 20px;
-      letter-spacing: 3px;
-      line-height: 1.5;
-      font-weight: none;
+    h2 {
+      font-size: 26px;
     }
 
     img {
@@ -141,46 +115,33 @@
   }
 
   .info-wrapper {
-    background: #ff6889;
-    color: #fff;
-    padding: 40px 0;
+    .container {
+      width: 900px;
 
-    p {
-      font-size: 22px;
-      line-height: 1.5;
-    }
+      p {
+        font-size: 22px;
+        line-height: 1.5;
+      }
 
-    .siroaka {
-      background: #fff;
-      color: red;
-      display: inline-block;
-      font-size: 18px;
-      font-weight: bold;
-    }
+      .siroaka {
+        font-size: 18px;
+      }
 
-    .infobtn-bg {
-      background: #ff0505;
-      border-radius: 50px;
-      padding: 25px 0;
-      font-size: 25px;
-      margin: 40px 0;
+      #infobtn-bg {
+        padding: 30px 0;
+        font-size: 30px;
+        margin: 60px 0;
+      }
     }
   }
 
   .enginia-wrapper {
-    background-image: url("/img/introbottom.jpg");
-    background-size: cover;
-    background-position: center bottom;
-    padding-bottom: 200px;
-
     span {
       background: linear-gradient(transparent 70%, rgb(255, 166, 0) 0%);
     }
   }
 
   .about-wrapper {
-    position: relative;
-    background: hsl(54, 100%, 51%);
     padding: 100px 0 50px;
 
     .about {
@@ -188,14 +149,6 @@
       width: $size;
       height: $size;
       line-height: $size;
-      border-radius: 50%;
-      display: inline-block;
-      background: hsl(32, 100%, 51%);
-      color: white;
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
       top: -50px;
     }
 
@@ -204,21 +157,12 @@
       margin: 10px 0;
     }
 
-    h3 {
-      padding: 20px 0;
-      font-size: 20px;
-    }
-
     .five-skills {
-      border: 2px solid hsl(32, 100%, 51%);
-      border-radius: 8px;
-      background: #fff;
 
       .skills {
         display: flex;
         justify-content: center;
 
-        // justify-content: space-between;
         .skill {
           padding-bottom: 50px;
 
@@ -229,13 +173,6 @@
           img {
             width: 75px;
             height: 75px;
-            object-fit: contain;
-            padding: 10px 0;
-          }
-
-          p {
-            font-size: 12px;
-            line-height: 20px;
           }
         }
       }
@@ -243,26 +180,6 @@
   }
 
   .step-wrapper {
-    background-image: url("/img/aboutsecondbg.jpg");
-    background-size: cover;
-    background-position: center bottom;
-    padding: 50px 0;
-    color: white;
-
-    h2 {
-      padding-top: 10px;
-      font-size: 28px;
-    }
-
-    h3 {
-      padding: 10px 0;
-      font-size: 20px;
-      line-height: 2;
-
-      span {
-        color: #ff933a;
-      }
-    }
 
     .steps {
       display: flex;
@@ -271,28 +188,14 @@
       .step {
         width: 400px;
         padding: 30px 40px;
-        border-radius: 5px;
-        background: #fff;
-        color: #000;
 
         &:not(:last-child) {
           margin-right: 20px;
         }
 
         .step-moji {
-          padding: 0 20px;
-          background: #ffb758;
-          color: #fff;
-          line-height: 26px;
           font-weight: bold;
           border-radius: 5px;
-          font-size: 16px;
-        }
-
-        p {
-          padding-top: 15px;
-          font-size: 14px;
-          font-weight: bold;
         }
       }
     }
@@ -300,30 +203,63 @@
 
   .skillup-wrapper {
     padding: 40px;
-    color: #fff;
-    background: #3f63ff;
-    font-weight: bold;
 
-    span {
-      color: #ff933a;
+    .container {
+      p {
+        font-size: 24px;
+      }
     }
   }
 
   .manaberu-wrapper {
-    padding: 40px;
-
-    h2 {
-      font-size: 28px;
-
-      span {
-        font-size: 20px;
+    .kasegus {
+      img {
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
       }
     }
+  }
 
-    h3 {
-      padding: 30px 0;
-      font-size: 22px;
-      font-weight: normal;
+  .merit-wrapper {
+    .three-merits {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      .merit {
+        width: 350px;
+        padding: 0 10px;
+
+        img {
+          height: 200px;
+        }
+      }
     }
   }
+
+  .orengewaku {
+    // border: 2px solid lighten($orange, 10%);
+    // border-radius: 8px;
+    // background: #fff;
+    padding: 30px 0;
+  
+    h3 {
+      font-size: 26px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .okotowari {
+    p {
+      padding: 20px 0;
+      font-size: 14px;
+    }
+  }
+
+
 }

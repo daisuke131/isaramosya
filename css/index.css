@@ -1,4 +1,6 @@
 body {
+  color: #666;
+  letter-spacing: 1.5px;
   line-height: 1.5;
   text-align: center;
 }
@@ -10,7 +12,6 @@ body h2 {
 
 body p {
   font-size: 16px;
-  letter-spacing: 1.5px;
 }
 
 .kagikakko {
@@ -125,7 +126,7 @@ header .container #contactbtn span {
   font-size: 14px;
 }
 
-header .container .inforbtn {
+header .container #inforbtn {
   display: none;
 }
 
@@ -541,14 +542,6 @@ header .container .inforbtn {
   float: right;
 }
 
-.nagare-wrapper .nagare .top-nagare .fa-angle-up {
-  display: none;
-}
-
-.nagare-wrapper .nagare .top-nagare .open {
-  transform: rotateZ(180deg);
-}
-
 .nagare-wrapper .nagare .bottom-nagare {
   padding: 0 20px 20px;
   text-align: left;
@@ -557,6 +550,10 @@ header .container .inforbtn {
 
 .nagare-wrapper .nagare .bottom-nagare .weight-font {
   font-weight: bold;
+}
+
+.open {
+  transform: rotateZ(180deg);
 }
 
 .tokuten-wrapper {
@@ -682,4 +679,40 @@ header .container .inforbtn {
   font-weight: bold;
   font-size: 20px;
   background: #ff7011;
+}
+
+.question-wrapper {
+  padding: 40px 0;
+}
+
+.question-wrapper h2 {
+  padding: 30px 0;
+}
+
+.question-wrapper .qaxx {
+  text-align: left;
+  padding: 2px 0;
+}
+
+.question-wrapper .qaxx .top-qaxx {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+
+.question-wrapper .qaxx .top-qaxx .fa-angle-down {
+  float: right;
+  font-size: 22px;
+  color: #ddd;
+}
+
+.question-wrapper .qaxx .bottom-qaxx {
+  padding: 20px 20px;
+  font-size: 14px;
+  display: none;
+}
+
+footer {
+  background: #ffccaa;
+  padding: 60px;
 }
