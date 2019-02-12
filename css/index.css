@@ -5,10 +5,12 @@ body {
 
 body h2 {
   font-size: 18px;
+  font-weight: bold;
 }
 
 body p {
   font-size: 16px;
+  letter-spacing: 1.5px;
 }
 
 .kagikakko {
@@ -107,18 +109,19 @@ header .container p {
   font-size: 12px;
 }
 
-header .container .contactbtn {
+header .container #contactbtn {
   float: right;
   padding: 10px 15px;
   color: white;
   background: #ff8f44;
+  cursor: pointer;
 }
 
-header .container .contactbtn .fas {
+header .container #contactbtn .fas {
   font-size: 30px;
 }
 
-header .container .contactbtn span {
+header .container #contactbtn span {
   font-size: 14px;
 }
 
@@ -158,12 +161,13 @@ header .container .inforbtn {
   font-weight: bold;
 }
 
-.info-wrapper .infobtn-bg {
+.info-wrapper #infobtn-bg {
   background: #ff7011;
   border-radius: 50px;
   padding: 10px 40px;
   font-size: 20px;
   margin: 30px 10px;
+  cursor: pointer;
 }
 
 .enginia-wrapper {
@@ -398,7 +402,6 @@ header .container .inforbtn {
 
 .menber-wrapper h2 {
   padding: 20px 0;
-  font-weight: bold;
 }
 
 .menber-wrapper p {
@@ -416,7 +419,9 @@ header .container .inforbtn {
   width: 130px;
   position: absolute;
   top: -90px;
-  right: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .menber-wrapper .menber p {
@@ -504,7 +509,6 @@ header .container .inforbtn {
 
 .nagare-wrapper h2 {
   padding-bottom: 25px;
-  font-weight: bold;
 }
 
 .nagare-wrapper .nagare {
@@ -553,4 +557,129 @@ header .container .inforbtn {
 
 .nagare-wrapper .nagare .bottom-nagare .weight-font {
   font-weight: bold;
+}
+
+.tokuten-wrapper {
+  padding: 40px 0;
+  background: #ffad77;
+}
+
+.tokuten-wrapper p {
+  font-size: 14px;
+  padding: 50px 0 80px;
+}
+
+.tokuten-wrapper p span {
+  color: white;
+}
+
+.tokuten-wrapper .saraniokuten {
+  border: 2px solid #fff;
+  position: relative;
+  padding: 60px 40px 40px;
+}
+
+.tokuten-wrapper .saraniokuten .tokutenmoji {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #ffad77;
+  width: 250px;
+  text-align: center;
+}
+
+.tokuten-wrapper .saraniokuten .tokutenA {
+  display: flex;
+}
+
+.tokuten-wrapper .saraniokuten .tokutenA:not(:last-child) {
+  padding-bottom: 30px;
+}
+
+.tokuten-wrapper .saraniokuten .tokutenA .tokutenB {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #fff;
+  color: #ff8f44;
+  border-radius: 50%;
+}
+
+.tokuten-wrapper .saraniokuten .tokutenA .tokutensetumei {
+  color: white;
+  font-size: 12px;
+  width: 200px;
+  padding: 10px 0;
+  padding-left: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.noteborantia-wrapper {
+  background: url("/img/specialdetail.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding-top: 40px;
+}
+
+.noteborantia-wrapper p {
+  font-size: 12px;
+  padding: 40px 0;
+  font-weight: bold;
+}
+
+.noteborantia-wrapper .shirokagikakko {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#contact-wrapper {
+  padding: 40px 0;
+  background: #ffad77;
+}
+
+#contact-wrapper .textbox {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 30px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #666;
+}
+
+#contact-wrapper textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 30px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #666;
+}
+
+#contact-wrapper .formbutton {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-top: 30px;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  background: #ff7011;
 }
