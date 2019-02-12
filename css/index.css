@@ -516,6 +516,7 @@ header .container .inforbtn {
 .nagare-wrapper .nagare .top-nagare {
   overflow: hidden;
   padding: 10px 20px;
+  margin: 10px 0;
 }
 
 .nagare-wrapper .nagare .top-nagare img {

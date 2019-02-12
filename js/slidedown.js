@@ -1,10 +1,10 @@
 $(function () {
     "use strict"
     $('.nagares .top-nagare').click(function () {
-        var ntd = $(this).children('.fas');
-        var nb = $(this).next('.nagares .bottom-nagare');
-        ntd.toggleClass('open');
-        nb.slideToggle();
-        // $('.nagares .top-nagare').not($(this)).next('.nagares .bottom-nagare').slideUp();       
+        $(this).next('.bottom-nagare').slideToggle();
+        $(this).children('i').toggleClass("open");
+        $('.nagares .top-nagare').not($(this)).next('.bottom-nagare').slideUp();
+        $('.nagares .top-nagare').not($(this)).children('i').removeClass("open");
+        return false;
     });
 });
