@@ -1,6 +1,6 @@
 /* medium screens */
 /* large screens */
-@media (min-width: 912px) {
+@media (min-width: 1150px) {
   body {
     font-size: 22px;
   }
@@ -134,6 +134,9 @@
     width: 75px;
     height: 75px;
   }
+  .step-wrapper p span {
+    font-weight: bold;
+  }
   .step-wrapper .steps {
     display: flex;
     justify-content: center;
@@ -185,5 +188,71 @@
   .okotowari p {
     padding: 20px 0;
     font-size: 14px;
+  }
+  .menber-wrapper .menbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .menber-wrapper .menbers .menber {
+    box-sizing: border-box;
+    width: 30%;
+    padding: 0 30px;
+    margin: 180px 20px 0;
+  }
+  .menber-wrapper .menbers .menber img {
+    width: 180px;
+    height: 180px;
+    top: -150px;
+  }
+  .qa-wrapper .shirokagikakko {
+    font-size: 26px;
+    line-height: 1.5;
+  }
+  .sansya-wrapper .sansyanokore img {
+    width: 230px;
+    height: 230px;
+  }
+  .sansya-wrapper .sansyanokore .sansyamessage {
+    padding: 30px;
+  }
+  .sansya-wrapper .sansyanokore .sansyamessage p {
+    font-size: 18px;
+  }
+  .sansya-wrapper .sansyanokore .sansyamessage a {
+    font-size: 18px;
+  }
+  .nagare-wrapper .nagare {
+    margin: 0;
+    display: flex;
+  }
+  .nagare-wrapper .nagare .top-nagare {
+    width: 500px;
+    background: #000;
+  }
+  .nagare-wrapper .nagare .top-nagare img {
+    width: 100px;
+    height: 100px;
+  }
+  .nagare-wrapper .nagare .top-nagare p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .nagare-wrapper .nagare .top-nagare i {
+    display: none;
+  }
+  .nagare-wrapper .nagare .bottom-nagare {
+    display: block;
+  }
+  .nagare-wrapper .flowline {
+    margin: 0;
+    display: block;
+  }
+  .fw {
+    font-weight: bold;
+    text-align: center;
+  }
+  .pckaigyou {
+    display: block;
   }
 }
