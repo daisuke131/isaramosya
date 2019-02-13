@@ -598,15 +598,7 @@ header .container #inforbtn {
   text-align: center;
 }
 
-.tokuten-wrapper .saraniokuten .tokutenA {
-  display: flex;
-}
-
-.tokuten-wrapper .saraniokuten .tokutenA:not(:last-child) {
-  padding-bottom: 30px;
-}
-
-.tokuten-wrapper .saraniokuten .tokutenA .tokutenB {
+.tokuten-wrapper .saraniokuten .tokutens .tokutenA .tokutenB {
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -615,16 +607,6 @@ header .container #inforbtn {
   background: #fff;
   color: #ff8f44;
   border-radius: 50%;
-}
-
-.tokuten-wrapper .saraniokuten .tokutenA .tokutensetumei {
-  color: white;
-  font-size: 12px;
-  width: 200px;
-  padding: 10px 0;
-  padding-left: 20px;
-  text-align: left;
-  display: inline-block;
 }
 
 .noteborantia-wrapper {

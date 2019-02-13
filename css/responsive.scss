@@ -1,353 +1,440 @@
+$orange: #ff7011;
+
 /* medium screens */
 
-@media (min-width: 570px) {
-}
+@media (min-width: 570px) {}
 
 /* large screens */
 
 @media (min-width: 1150px) {
-    body {
-        font-size: 22px;
+  body {
+    font-size: 22px;
 
-        h2 {
-            font-size: 26px;
-        }
-
-        p {
-            font-size: 20px;
-        }
+    h2 {
+      font-size: 26px;
     }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .container {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
+  .kaigyou {
+    display: none;
+  }
+
+  .kagikakko {
+    width: 800px;
+    margin: 40px 0;
+    padding: 35px 0px;
+    font-size: 28px;
+    letter-spacing: 1;
+    position: relative;
+    display: inline-block;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      position: absolute;
+    }
+
+    &::before {
+      border-left: solid 4px #ff6889;
+      border-top: solid 4px #ff6889;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      border-right: solid 4px #ff6889;
+      border-bottom: solid 4px #ff6889;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  header {
+    overflow: hidden;
+    padding: 10px 0;
 
     .container {
-        width: 1150px;
-        margin: 0 auto;
-    }
+      width: 1150px;
 
-    .kaigyou {
-        display: none;
-    }
-
-    .kagikakko {
-        width: 800px;
-        margin: 40px 0;
-        padding: 35px 0px;
-        font-size: 28px;
-        letter-spacing: 1;
+      img {
         position: relative;
+        float: left;
+        width: 150px;
+        top: 0px;
+        left: 0px;
+      }
+
+      p {
+        position: relative;
+        float: left;
+        line-height: 60px;
+      }
+
+      #contactbtn {
+        display: none;
+      }
+
+      #inforbtn {
+        float: right;
+        background: red;
+        font-size: 16px;
+        color: #fff;
         display: inline-block;
+        padding: 15px 45px;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+    }
+  }
 
-        &::before,
-        &::after {
-            content: "";
-            width: 50px;
-            height: 50px;
-            position: absolute;
-        }
+  .top-wrapper {
+    padding-top: 140px;
 
-        &::before {
-            border-left: solid 4px #ff6889;
-            border-top: solid 4px #ff6889;
-            top: 0;
-            left: 0;
-        }
-
-        &::after {
-            border-right: solid 4px #ff6889;
-            border-bottom: solid 4px #ff6889;
-            bottom: 0;
-            right: 0;
-        }
+    h2 {
+      font-size: 26px;
     }
 
-    header {
-        overflow: hidden;
-        padding: 10px 0;
-
-        .container {
-            width: 1150px;
-
-            img {
-                position: relative;
-                float: left;
-                width: 150px;
-                top: 0px;
-                left: 0px;
-            }
-
-            p {
-                position: relative;
-                float: left;
-                line-height: 60px;
-            }
-
-            #contactbtn {
-                display: none;
-            }
-
-            #inforbtn {
-                float: right;
-                background: red;
-                font-size: 16px;
-                color: #fff;
-                display: inline-block;
-                padding: 15px 45px;
-                border-radius: 30px;
-                cursor: pointer;
-            }
-        }
+    img {
+      width: 310px;
     }
 
-    .top-wrapper {
-        padding-top: 140px;
+    p {
+      font-size: 20px;
+      padding: 20px 0 60px;
+    }
+  }
 
-        h2 {
-            font-size: 26px;
+  .info-wrapper {
+    .container {
+      width: 900px;
+
+      p {
+        font-size: 22px;
+        line-height: 1.5;
+      }
+
+      .siroaka {
+        font-size: 18px;
+      }
+
+      #infobtn-bg {
+        padding: 30px 0;
+        font-size: 30px;
+        margin: 60px 0;
+      }
+    }
+  }
+
+  .enginia-wrapper {
+    span {
+      background: linear-gradient(transparent 70%, rgb(255, 166, 0) 0%);
+    }
+  }
+
+  .about-wrapper {
+    padding: 100px 0 50px;
+
+    .about {
+      $size: 100px;
+      width: $size;
+      height: $size;
+      line-height: $size;
+      top: -50px;
+    }
+
+    h2 {
+      box-sizing: border-box;
+      margin: 10px 0;
+    }
+
+    .five-skills {
+      .skills {
+        display: flex;
+        justify-content: center;
+
+        .skill {
+          padding-bottom: 50px;
+
+          &:not(:last-child) {
+            padding-right: 30px;
+          }
+
+          img {
+            width: 75px;
+            height: 75px;
+          }
         }
+      }
+    }
+  }
+
+  .step-wrapper {
+    p {
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .steps {
+      display: flex;
+      justify-content: center;
+
+      .step {
+        width: 400px;
+        padding: 30px 40px;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+
+        .step-moji {
+          font-weight: bold;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .skillup-wrapper {
+    padding: 40px;
+
+    .container {
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .manaberu-wrapper {
+    .kasegus {
+      img {
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+
+  .merit-wrapper {
+    .three-merits {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+
+      .merit {
+        width: 350px;
+        padding: 0 10px;
 
         img {
-            width: 310px;
+          height: 200px;
+        }
+      }
+    }
+  }
+
+  .orengewaku {
+    padding: 30px 0;
+
+    h3 {
+      font-size: 26px;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .okotowari {
+    p {
+      padding: 20px 0;
+      font-size: 14px;
+    }
+  }
+
+  .menber-wrapper {
+    .menbers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      // margin-top: 80px;
+      .menber {
+        box-sizing: border-box;
+        width: 30%;
+        padding: 0 30px;
+        margin: 180px 20px 0;
+
+        img {
+          $size: 180px;
+          width: $size;
+          height: $size;
+          top: -150px;
+        }
+      }
+    }
+  }
+
+  .qa-wrapper {
+    .shirokagikakko {
+      font-size: 26px;
+      line-height: 1.5;
+    }
+  }
+
+  .sansya-wrapper {
+    .sansyanokore {
+      img {
+        $size: 230px;
+        width: $size;
+        height: $size;
+      }
+
+      .sansyamessage {
+        padding: 30px;
+
+        p {
+          font-size: 18px;
+        }
+
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .nagare-wrapper {
+    .nagare {
+      margin: 0px;
+      display: flex;
+      padding: 30px 80px;
+      box-sizing: border-box;
+
+      .top-nagare {
+        margin: 0;
+        padding: 0;
+        width: 20%;
+
+        img {
+          $size: 100px;
+          width: 100%;
+          padding: 10px 60px;
+          box-sizing: border-box;
+          float: none;
         }
 
         p {
-            font-size: 20px;
-            padding: 20px 0 60px;
+          font-size: 18px;
+          line-height: 1.5;
+          display: block;
+          float: none;
+          padding: 0px;
         }
+
+        i {
+          display: none;
+        }
+      }
+
+      .bottom-nagare {
+        display: block;
+        width: 80%;
+        padding: 0px;
+
+        .weight-font {
+          font-size: 16px;
+        }
+
+        .hosoi-font {
+          font-size: 14px;
+        }
+      }
     }
 
-    .info-wrapper {
-        .container {
-            width: 900px;
-
-            p {
-                font-size: 22px;
-                line-height: 1.5;
-            }
-
-            .siroaka {
-                font-size: 18px;
-            }
-
-            #infobtn-bg {
-                padding: 30px 0;
-                font-size: 30px;
-                margin: 60px 0;
-            }
-        }
-    }
-
-    .enginia-wrapper {
-        span {
-            background: linear-gradient(transparent 70%, rgb(255, 166, 0) 0%);
-        }
-    }
-
-    .about-wrapper {
-        padding: 100px 0 50px;
-
-        .about {
-            $size: 100px;
-            width: $size;
-            height: $size;
-            line-height: $size;
-            top: -50px;
-        }
-
-        h2 {
-            box-sizing: border-box;
-            margin: 10px 0;
-        }
-
-        .five-skills {
-            .skills {
-                display: flex;
-                justify-content: center;
-
-                .skill {
-                    padding-bottom: 50px;
-
-                    &:not(:last-child) {
-                        padding-right: 30px;
-                    }
-
-                    img {
-                        width: 75px;
-                        height: 75px;
-                    }
-                }
-            }
-        }
-    }
-
-    .step-wrapper {
-        p {
-            span {
-                font-weight: bold;
-            }
-        }
-        .steps {
-            display: flex;
-            justify-content: center;
-
-            .step {
-                width: 400px;
-                padding: 30px 40px;
-
-                &:not(:last-child) {
-                    margin-right: 20px;
-                }
-
-                .step-moji {
-                    font-weight: bold;
-                    border-radius: 5px;
-                }
-            }
-        }
-    }
-
-    .skillup-wrapper {
-        padding: 40px;
-
-        .container {
-            p {
-                font-size: 24px;
-            }
-        }
-    }
-
-    .manaberu-wrapper {
-        .kasegus {
-            img {
-                &:not(:last-child) {
-                    margin-right: 40px;
-                }
-            }
-        }
-    }
-
-    .merit-wrapper {
-        .three-merits {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
-            .merit {
-                width: 350px;
-                padding: 0 10px;
-
-                img {
-                    height: 200px;
-                }
-            }
-        }
-    }
-
-    .orengewaku {
-        padding: 30px 0;
-
-        h3 {
-            font-size: 26px;
-        }
-        h4 {
-            font-size: 20px;
-        }
-        p {
-            font-size: 16px;
-        }
-    }
-
-    .okotowari {
-        p {
-            padding: 20px 0;
-            font-size: 14px;
-        }
-    }
-
-    .menber-wrapper {
-        .menbers {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            // margin-top: 80px;
-            .menber {
-                box-sizing: border-box;
-                width: 30%;
-                padding: 0 30px;
-                margin: 180px 20px 0;
-                img {
-                    $size: 180px;
-                    width: $size;
-                    height: $size;
-                    top: -150px;
-                }
-            }
-        }
-    }
-
-    .qa-wrapper {
-        .shirokagikakko {
-            font-size: 26px;
-            line-height: 1.5;
-        }
-    }
-
-    .sansya-wrapper {
-        .sansyanokore {
-            img {
-                $size: 230px;
-                width: $size;
-                height: $size;
-            }
-            .sansyamessage {
-                padding: 30px;
-                p {
-                    font-size: 18px;
-                }
-                a {
-                    font-size: 18px;
-                }
-            }
-        }
-    }
-
-    .nagare-wrapper {
-        .nagare {
-          margin: 0;
-          display: flex;
-            .top-nagare {
-              // padding: 100px;
-              width: 500px;
-              background: #000;
-              img {
-                $size: 100px;
-                width: $size;
-                height: $size;
-                // padding: 
-              }
-
-              p {
-                font-size: 18px;
-line-height: 1.5;
-              }
-
-                i {
-                    display: none;
-                }
-            }
-            .bottom-nagare {
-                display: block;
-            }
-        }
-        .flowline {
-            margin: 0;
-            display: block;
-        }
-    }
-
-    .fw {
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .pckaigyou {
+    .flowline {
       display: block;
+      margin: auto;
+
     }
+  }
+
+  .tokuten-wrapper {
+    p {
+      font-size: 18px;
+    }
+
+    .saraniokuten {
+      .tokutenmoji {
+        width: 700px;
+        top: -20px;
+        font-size: 26px;
+      }
+    }
+  }
+
+  .tokutens {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+
+    .tokutenA {
+      // $size: 250px;
+      width: 250px;
+      box-sizing: content-box;
+      padding: 60px 0;
+      border-radius: 50%;
+      background: #fff;
+
+      .tokutenB {
+        color: lighten($orange, 20%);
+        // $size: 60px;
+        //   width: $size;
+        //   height: $size;
+        //   line-height: $size;
+        //   font-size: 12px;
+        //   font-weight: bold;
+        //   background: #fff;
+        //   color: lighten($orange, 10%);
+          // border-radius: 0;
+      }
+
+      .tokutensetumei {
+        font-size: 16px;
+        padding: 10px 20px;
+
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+  .fw {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .pckaigyou {
+    display: block;
+  }
 }

@@ -223,30 +223,73 @@
     font-size: 18px;
   }
   .nagare-wrapper .nagare {
-    margin: 0;
+    margin: 0px;
     display: flex;
+    padding: 30px 80px;
+    box-sizing: border-box;
   }
   .nagare-wrapper .nagare .top-nagare {
-    width: 500px;
-    background: #000;
+    margin: 0;
+    padding: 0;
+    width: 20%;
   }
   .nagare-wrapper .nagare .top-nagare img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    padding: 10px 60px;
+    box-sizing: border-box;
+    float: none;
   }
   .nagare-wrapper .nagare .top-nagare p {
     font-size: 18px;
     line-height: 1.5;
+    display: block;
+    float: none;
+    padding: 0px;
   }
   .nagare-wrapper .nagare .top-nagare i {
     display: none;
   }
   .nagare-wrapper .nagare .bottom-nagare {
     display: block;
+    width: 80%;
+    padding: 0px;
+  }
+  .nagare-wrapper .nagare .bottom-nagare .weight-font {
+    font-size: 16px;
+  }
+  .nagare-wrapper .nagare .bottom-nagare .hosoi-font {
+    font-size: 14px;
   }
   .nagare-wrapper .flowline {
-    margin: 0;
     display: block;
+    margin: auto;
+  }
+  .tokuten-wrapper p {
+    font-size: 18px;
+  }
+  .tokuten-wrapper .saraniokuten .tokutenmoji {
+    width: 700px;
+    top: -20px;
+    font-size: 26px;
+  }
+  .tokutens {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+  .tokutens .tokutenA {
+    width: 250px;
+    box-sizing: content-box;
+    padding: 60px 0;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .tokutens .tokutenA .tokutenB {
+    color: #ffad77;
+  }
+  .tokutens .tokutenA .tokutensetumei {
+    font-size: 16px;
+    padding: 10px 20px;
   }
   .fw {
     font-weight: bold;

@@ -3,16 +3,18 @@
 $orange: #ff7011;
 
 body {
-    color: #666;
-    letter-spacing: 1.5px;
+  color: #666;
+  letter-spacing: 1.5px;
+
   h2 {
     font-size: 18px;
     font-weight: bold;
   }
 
   p {
-    font-size: 16px; 
+    font-size: 16px;
   }
+
   line-height: 1.5;
   text-align: center;
 }
@@ -522,6 +524,7 @@ header {
       padding: 10px 20px;
 
       margin: 10px 0;
+
       // background: lighten($orange, 40%);
       // border-radius: 8px;
       img {
@@ -547,6 +550,7 @@ header {
       padding: 0 20px 20px;
       text-align: left;
       display: none;
+
       .weight-font {
         font-weight: bold;
       }
@@ -560,23 +564,27 @@ header {
 }
 
 .open {
-    transform: rotateZ(180deg);
-  }
+  transform: rotateZ(180deg);
+}
 
 .tokuten-wrapper {
   padding: 40px 0;
   background: lighten($orange, 20%);
+
   p {
     font-size: 14px;
     padding: 50px 0 80px;
+
     span {
       color: white;
     }
   }
+
   .saraniokuten {
     border: 2px solid #fff;
     position: relative;
     padding: 60px 40px 40px;
+
     .tokutenmoji {
       font-size: 20px;
       font-weight: bold;
@@ -590,30 +598,36 @@ header {
       width: 250px;
       text-align: center;
     }
-    .tokutenA {
-      display: flex;
-      &:not(:last-child) {
-        padding-bottom: 30px;
-      }
-      .tokutenB {
-        $size: 60px;
-        width: $size;
-        height: $size;
-        line-height: $size;
-        font-size: 12px;
-        font-weight: bold;
-        background: #fff;
-        color: lighten($orange, 10%);
-        border-radius: 50%;
-      }
-      .tokutensetumei {
-        color: white;
-        font-size: 12px;
-        width: 200px;
-        padding: 10px 0;
-        padding-left: 20px;
-        text-align: left;
-        display: inline-block;
+
+    .tokutens {
+      .tokutenA {
+
+        // display: flex;
+        &:not(:last-child) {
+          // padding-bottom: 30px;
+        }
+
+        .tokutenB {
+          $size: 60px;
+          width: $size;
+          height: $size;
+          line-height: $size;
+          font-size: 12px;
+          font-weight: bold;
+          background: #fff;
+          color: lighten($orange, 10%);
+          border-radius: 50%;
+        }
+
+        .tokutensetumei {
+          // color: white;
+          // font-size: 12px;
+          // width: 200px;
+          // padding: 10px 0;
+          // padding-left: 20px;
+          // text-align: left;
+          // display: inline-block;
+        }
       }
     }
   }
@@ -625,11 +639,13 @@ header {
   background-position: center;
   color: #fff;
   padding-top: 40px;
+
   p {
     font-size: 12px;
     padding: 40px 0;
     font-weight: bold;
   }
+
   .shirokagikakko {
     font-weight: bold;
     font-size: 20px;
@@ -639,6 +655,7 @@ header {
 #contact-wrapper {
   padding: 40px 0;
   background: lighten($orange, 20%);
+
   .textbox {
     display: block;
     width: 100%;
@@ -680,32 +697,37 @@ header {
 }
 
 .question-wrapper {
-    padding: 40px 0;
-    h2 {
-        padding: 30px 0;
-    }
+  padding: 40px 0;
+
+  h2 {
+    padding: 30px 0;
+  }
+
   .qaxx {
-      text-align: left;
-      padding: 2px 0;
+    text-align: left;
+    padding: 2px 0;
+
     .top-qaxx {
       border: 1px solid #ccc;
       border-radius: 2px;
       padding: 10px 20px;
+
       .fa-angle-down {
-          float: right;
-          font-size: 22px;
-          color: #ddd;
+        float: right;
+        font-size: 22px;
+        color: #ddd;
       }
     }
+
     .bottom-qaxx {
-        padding: 20px 20px;
-        font-size: 14px;
-        display: none;
+      padding: 20px 20px;
+      font-size: 14px;
+      display: none;
     }
   }
 }
 
 footer {
-    background: lighten($orange, 30%);
-    padding: 60px;
+  background: lighten($orange, 30%);
+  padding: 60px;
 }
