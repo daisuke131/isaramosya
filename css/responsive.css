@@ -272,24 +272,38 @@
     top: -20px;
     font-size: 26px;
   }
-  .tokutens {
+  .tokuten-wrapper .saraniokuten .tokutens {
     display: flex;
     justify-content: space-between;
     padding: 0 60px;
   }
-  .tokutens .tokutenA {
+  .tokuten-wrapper .saraniokuten .tokutens .tokutenA {
     width: 250px;
-    box-sizing: content-box;
+    height: 250px;
+    box-sizing: border-box;
     padding: 60px 0;
     border-radius: 50%;
     background: #fff;
+    display: initial;
   }
-  .tokutens .tokutenA .tokutenB {
+  .tokuten-wrapper .saraniokuten .tokutens .tokutenA .tokutenB {
     color: #ffad77;
+    width: 80px;
+    height: 30px;
+    line-height: 1;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #fff;
+    color: #ff8f44;
+    border-radius: 0;
+    margin: 0 auto;
   }
-  .tokutens .tokutenA .tokutensetumei {
+  .tokuten-wrapper .saraniokuten .tokutens .tokutenA .tokutensetumei {
     font-size: 16px;
     padding: 10px 20px;
+    color: #333;
+    text-align: center;
   }
   .fw {
     font-weight: bold;

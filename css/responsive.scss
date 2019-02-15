@@ -2,7 +2,8 @@ $orange: #ff7011;
 
 /* medium screens */
 
-@media (min-width: 570px) {}
+@media (min-width: 570px) {
+}
 
 /* large screens */
 
@@ -369,7 +370,6 @@ $orange: #ff7011;
     .flowline {
       display: block;
       margin: auto;
-
     }
   }
 
@@ -384,50 +384,48 @@ $orange: #ff7011;
         top: -20px;
         font-size: 26px;
       }
+
+      .tokutens {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 60px;
+
+        .tokutenA {
+          $size: 250px;
+          width: $size;
+          height: $size;
+          box-sizing: border-box;
+          padding: 60px 0;
+          border-radius: 50%;
+          background: #fff;
+          display: initial;
+
+          .tokutenB {
+            color: lighten($orange, 20%);
+            $size: 80px;
+            width: $size;
+            height: 30px;
+          line-height: 1;
+
+            padding-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            background: #fff;
+            color: lighten($orange, 10%);
+            border-radius: 0;
+            margin: 0 auto;
+          }
+
+          .tokutensetumei {
+            font-size: 16px;
+            padding: 10px 20px;
+            color: #333;
+            text-align: center;
+          }
+        }
+      }
     }
   }
-
-  .tokutens {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 60px;
-
-    .tokutenA {
-      // $size: 250px;
-      width: 250px;
-      box-sizing: content-box;
-      padding: 60px 0;
-      border-radius: 50%;
-      background: #fff;
-
-      .tokutenB {
-        color: lighten($orange, 20%);
-        // $size: 60px;
-        //   width: $size;
-        //   height: $size;
-        //   line-height: $size;
-        //   font-size: 12px;
-        //   font-weight: bold;
-        //   background: #fff;
-        //   color: lighten($orange, 10%);
-          // border-radius: 0;
-      }
-
-      .tokutensetumei {
-        font-size: 16px;
-        padding: 10px 20px;
-
-      }
-    }
-  }
-
-
-
-
-
-
-
-
 
   .fw {
     font-weight: bold;
