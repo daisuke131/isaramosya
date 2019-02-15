@@ -621,11 +621,12 @@ header {
         .tokutensetumei {
           color: white;
           font-size: 12px;
-          width: 200px;
-          padding: 10px 0;
+          width: calc(100% - 60px);
+          height: 60px;
+          vertical-align: middle;
           padding-left: 20px;
           text-align: left;
-          display: inline-block;
+          padding: 2% 15px;
         }
       }
     }
