@@ -1,5 +1,8 @@
 /* medium screens */
 @media (min-width: 768px) {
+  body h2 {
+    font-size: 22px;
+  }
   .kaigyou {
     display: none;
   }
@@ -59,6 +62,10 @@
     height: 150px;
     top: -120px;
   }
+  .qa-wrapper .shirokagikakko {
+    font-size: 22px;
+    line-height: 1.5;
+  }
   .sansya-wrapper .sansyanokore img {
     width: 200px;
     height: 200px;
@@ -116,6 +123,12 @@
     color: #333;
     text-align: center;
   }
+  .noteborantia-wrapper p {
+    font-size: 16px;
+  }
+  .question-wrapper .container {
+    width: 80%;
+  }
 }
 
 /* large screens */
@@ -166,7 +179,7 @@
     background: red;
     font-size: 16px;
     color: #fff;
-    display: inline-block;
+    display: block;
     padding: 15px 45px;
     border-radius: 30px;
     cursor: pointer;
@@ -291,42 +304,42 @@
     width: 230px;
     height: 230px;
   }
-  .nagare-wrapper .nagare {
-    margin: 0px;
+  .nagares-accordion {
+    display: none;
+  }
+  .nagare-wrapper .nagares {
+    display: block;
+  }
+  .nagare-wrapper .nagares .nagare {
+    background: #ffebdd;
+    border-radius: 8px;
     display: flex;
     padding: 30px 80px;
     box-sizing: border-box;
   }
-  .nagare-wrapper .nagare .top-nagare {
-    margin: 0;
-    padding: 0;
+  .nagare-wrapper .nagares .nagare .top-nagare {
     width: 20%;
   }
-  .nagare-wrapper .nagare .top-nagare img {
+  .nagare-wrapper .nagares .nagare .top-nagare img {
     width: 100%;
     padding: 10px 60px;
     box-sizing: border-box;
     float: none;
   }
-  .nagare-wrapper .nagare .top-nagare p {
+  .nagare-wrapper .nagares .nagare .top-nagare p {
     font-size: 18px;
     line-height: 1.5;
-    display: block;
-    float: none;
-    padding: 0px;
+    font-weight: bold;
   }
-  .nagare-wrapper .nagare .top-nagare i {
-    display: none;
-  }
-  .nagare-wrapper .nagare .bottom-nagare {
-    display: block;
+  .nagare-wrapper .nagares .nagare .bottom-nagare {
     width: 80%;
-    padding: 0px;
+    padding-left: 40px;
   }
-  .nagare-wrapper .nagare .bottom-nagare .weight-font {
+  .nagare-wrapper .nagares .nagare .bottom-nagare .weight-font {
     font-size: 16px;
+    font-weight: bold;
   }
-  .nagare-wrapper .nagare .bottom-nagare .hosoi-font {
+  .nagare-wrapper .nagares .nagare .bottom-nagare .hosoi-font {
     font-size: 14px;
   }
   .nagare-wrapper .flowline {

@@ -513,20 +513,20 @@ header {
   h2 {
     padding-bottom: 25px;
   }
-
-  .nagare {
+.nagares {
+  display: none;
+}
+.nagares-accordion{
+  .nagare-accordion {
     margin: 10px 0;
     background: lighten($orange, 40%);
     border-radius: 8px;
 
-    .top-nagare {
+    .top-nagare-accordion {
       overflow: hidden;
       padding: 10px 20px;
-
       margin: 10px 0;
 
-      // background: lighten($orange, 40%);
-      // border-radius: 8px;
       img {
         width: 50px;
         float: left;
@@ -546,7 +546,7 @@ header {
       }
     }
 
-    .bottom-nagare {
+    .bottom-nagare-accordion {
       padding: 0 20px 20px;
       text-align: left;
       display: none;
@@ -556,7 +556,7 @@ header {
       }
     }
   }
-
+}
   .flowline {
     margin: 0;
     display: none;

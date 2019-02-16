@@ -516,43 +516,47 @@ header .container #inforbtn {
   padding-bottom: 25px;
 }
 
-.nagare-wrapper .nagare {
+.nagare-wrapper .nagares {
+  display: none;
+}
+
+.nagare-wrapper .nagares-accordion .nagare-accordion {
   margin: 10px 0;
   background: #ffebdd;
   border-radius: 8px;
 }
 
-.nagare-wrapper .nagare .top-nagare {
+.nagare-wrapper .nagares-accordion .nagare-accordion .top-nagare-accordion {
   overflow: hidden;
   padding: 10px 20px;
   margin: 10px 0;
 }
 
-.nagare-wrapper .nagare .top-nagare img {
+.nagare-wrapper .nagares-accordion .nagare-accordion .top-nagare-accordion img {
   width: 50px;
   float: left;
 }
 
-.nagare-wrapper .nagare .top-nagare p {
+.nagare-wrapper .nagares-accordion .nagare-accordion .top-nagare-accordion p {
   float: left;
   line-height: 50px;
   font-weight: bold;
   padding-left: 20px;
 }
 
-.nagare-wrapper .nagare .top-nagare i {
+.nagare-wrapper .nagares-accordion .nagare-accordion .top-nagare-accordion i {
   line-height: 50px;
   font-size: 30px;
   float: right;
 }
 
-.nagare-wrapper .nagare .bottom-nagare {
+.nagare-wrapper .nagares-accordion .nagare-accordion .bottom-nagare-accordion {
   padding: 0 20px 20px;
   text-align: left;
   display: none;
 }
 
-.nagare-wrapper .nagare .bottom-nagare .weight-font {
+.nagare-wrapper .nagares-accordion .nagare-accordion .bottom-nagare-accordion .weight-font {
   font-weight: bold;
 }
 

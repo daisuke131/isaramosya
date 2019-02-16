@@ -4,6 +4,12 @@ $orange: #ff7011;
 
 @media (min-width: 768px)  {
 
+  body {
+    h2 {
+      font-size: 22px;
+    }
+  }
+
   .kaigyou {
     display: none;
   }
@@ -89,6 +95,13 @@ $orange: #ff7011;
     }
   }
 
+  .qa-wrapper {
+    .shirokagikakko {
+      font-size: 22px;
+      line-height: 1.5;
+    }
+  }
+
   .sansya-wrapper {
     .sansyanokore {
       img {
@@ -163,6 +176,18 @@ $orange: #ff7011;
       }
     }
   }
+
+  .noteborantia-wrapper {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .question-wrapper {
+    .container {
+      width: 80%;
+    }
+  }
 }
 
 /* large screens */
@@ -227,7 +252,7 @@ $orange: #ff7011;
         background: red;
         font-size: 16px;
         color: #fff;
-        display: inline-block;
+        display: block;
         padding: 15px 45px;
         border-radius: 30px;
         cursor: pointer;
@@ -419,16 +444,21 @@ $orange: #ff7011;
     }
   }
 
+  .nagares-accordion {
+    display: none;
+  }
+
   .nagare-wrapper {
+    .nagares{
+      display: block;
     .nagare {
-      margin: 0px;
+      background: lighten($orange, 40%);
+      border-radius: 8px;
       display: flex;
       padding: 30px 80px;
       box-sizing: border-box;
 
       .top-nagare {
-        margin: 0;
-        padding: 0;
         width: 20%;
 
         img {
@@ -442,23 +472,17 @@ $orange: #ff7011;
         p {
           font-size: 18px;
           line-height: 1.5;
-          display: block;
-          float: none;
-          padding: 0px;
-        }
-
-        i {
-          display: none;
+          font-weight: bold;
         }
       }
 
       .bottom-nagare {
-        display: block;
         width: 80%;
-        padding: 0px;
+        padding-left: 40px;
 
         .weight-font {
           font-size: 16px;
+          font-weight: bold;
         }
 
         .hosoi-font {
@@ -466,6 +490,7 @@ $orange: #ff7011;
         }
       }
     }
+  }
 
     .flowline {
       display: block;
@@ -485,12 +510,12 @@ $orange: #ff7011;
       }
     }
   }
-
   .noteborantia-wrapper {
     p {
       font-size: 18px;
     }
   }
+  
   #contact-wrapper {
     .container {
       width: 60%;
