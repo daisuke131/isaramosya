@@ -1,5 +1,78 @@
 /* medium screens */
 @media (min-width: 768px) {
+  .kaigyou {
+    display: none;
+  }
+  .info-wrapper .container {
+    width: 80%;
+  }
+  .info-wrapper .container p {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .info-wrapper .container .siroaka {
+    font-size: 18px;
+  }
+  .info-wrapper .container #infobtn-bg {
+    padding: 30px 0;
+    font-size: 30px;
+    margin: 60px 0;
+  }
+  .step-wrapper p span {
+    font-weight: bold;
+  }
+  .step-wrapper .steps {
+    display: flex;
+    justify-content: space-between;
+  }
+  .step-wrapper .steps .step {
+    width: 400px;
+    padding: 10px 40px;
+  }
+  .step-wrapper .steps .step:not(:last-child) {
+    margin-right: 20px;
+  }
+  .step-wrapper .steps .step .step-moji {
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .merit-wrapper .three-merits .merit img {
+    width: 400px;
+    height: auto;
+  }
+  .merit-wrapper .three-merits .merit .mojicenter {
+    width: 300px;
+  }
+  .menber-wrapper .menbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .menber-wrapper .menbers .menber {
+    box-sizing: border-box;
+    width: 47%;
+    margin-top: 150px;
+    padding: 0 20px;
+  }
+  .menber-wrapper .menbers .menber img {
+    width: 150px;
+    height: 150px;
+    top: -120px;
+  }
+  .sansya-wrapper .sansyanokore img {
+    width: 200px;
+    height: 200px;
+  }
+  .sansya-wrapper .sansyanokore .sansyamessage {
+    padding: 30px;
+    padding-right: 0;
+  }
+  .sansya-wrapper .sansyanokore .sansyamessage p {
+    font-size: 18px;
+  }
+  .sansya-wrapper .sansyanokore .sansyamessage a {
+    font-size: 18px;
+  }
   .tokuten-wrapper p {
     font-size: 18px;
   }
@@ -13,7 +86,7 @@
   }
   .tokuten-wrapper .saraniokuten .tokutens {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .tokuten-wrapper .saraniokuten .tokutens .tokutenA {
     width: 250px;
@@ -60,58 +133,11 @@
     width: 1150px;
     margin: 0 auto;
   }
-  .kaigyou {
-    display: none;
-  }
   .kagikakko {
     width: 80%;
-    padding: 25px 0px;
-    margin: 30px 0;
-    position: relative;
-    display: inline-block;
-  }
-  .kagikakko::before, .kagikakko::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    position: absolute;
-  }
-  .kagikakko::before {
-    border-left: solid 4px #ffad77;
-    border-top: solid 4px #ffad77;
-    top: 0;
-    left: 0;
-  }
-  .kagikakko::after {
-    border-right: solid 4px #ffad77;
-    border-bottom: solid 4px #ffad77;
-    bottom: 0;
-    right: 0;
   }
   .shirokagikakko {
     width: 80%;
-    padding: 25px 0px;
-    margin: 30px 0;
-    position: relative;
-    display: inline-block;
-  }
-  .shirokagikakko::before, .shirokagikakko::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    position: absolute;
-  }
-  .shirokagikakko::before {
-    border-left: solid 4px #fff;
-    border-top: solid 4px #fff;
-    top: 0;
-    left: 0;
-  }
-  .shirokagikakko::after {
-    border-right: solid 4px #fff;
-    border-bottom: solid 4px #fff;
-    bottom: 0;
-    right: 0;
   }
   header {
     overflow: hidden;
@@ -203,23 +229,8 @@
     width: 75px;
     height: 75px;
   }
-  .step-wrapper p span {
-    font-weight: bold;
-  }
-  .step-wrapper .steps {
-    display: flex;
-    justify-content: center;
-  }
   .step-wrapper .steps .step {
-    width: 400px;
     padding: 30px 40px;
-  }
-  .step-wrapper .steps .step:not(:last-child) {
-    margin-right: 20px;
-  }
-  .step-wrapper .steps .step .step-moji {
-    font-weight: bold;
-    border-radius: 5px;
   }
   .skillup-wrapper {
     padding: 40px;
@@ -232,7 +243,7 @@
   }
   .merit-wrapper .three-merits {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 30px;
   }
   .merit-wrapper .three-merits .merit {
@@ -240,7 +251,7 @@
     padding: 0 10px;
   }
   .merit-wrapper .three-merits .merit img {
-    height: 200px;
+    width: 350px;
   }
   .orengewaku {
     padding: 30px 0;
@@ -259,8 +270,6 @@
     font-size: 14px;
   }
   .menber-wrapper .menbers {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
   }
   .menber-wrapper .menbers .menber {
@@ -281,15 +290,6 @@
   .sansya-wrapper .sansyanokore img {
     width: 230px;
     height: 230px;
-  }
-  .sansya-wrapper .sansyanokore .sansyamessage {
-    padding: 30px;
-  }
-  .sansya-wrapper .sansyanokore .sansyamessage p {
-    font-size: 18px;
-  }
-  .sansya-wrapper .sansyanokore .sansyamessage a {
-    font-size: 18px;
   }
   .nagare-wrapper .nagare {
     margin: 0px;
@@ -336,43 +336,8 @@
   .tokuten-wrapper p {
     font-size: 18px;
   }
-  .tokuten-wrapper .saraniokuten .tokutenmoji {
-    width: 700px;
-    top: -20px;
-    font-size: 26px;
-  }
   .tokuten-wrapper .saraniokuten .tokutens {
-    display: flex;
-    justify-content: space-around;
     padding: 0 60px;
-  }
-  .tokuten-wrapper .saraniokuten .tokutens .tokutenA {
-    width: 250px;
-    height: 250px;
-    box-sizing: border-box;
-    padding: 60px 0;
-    border-radius: 50%;
-    background: #fff;
-    display: initial;
-  }
-  .tokuten-wrapper .saraniokuten .tokutens .tokutenA .tokutenB {
-    color: #ffad77;
-    width: 80px;
-    height: 30px;
-    line-height: 1;
-    padding-bottom: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    background: #fff;
-    color: #ff8f44;
-    border-radius: 0;
-    margin: 0 auto;
-  }
-  .tokuten-wrapper .saraniokuten .tokutens .tokutenA .tokutensetumei {
-    font-size: 16px;
-    padding: 10px 20px;
-    color: #333;
-    text-align: center;
   }
   .noteborantia-wrapper p {
     font-size: 18px;

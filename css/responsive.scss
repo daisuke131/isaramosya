@@ -4,6 +4,113 @@ $orange: #ff7011;
 
 @media (min-width: 768px)  {
 
+  .kaigyou {
+    display: none;
+  }
+
+  .info-wrapper {
+    .container {
+      width: 80%;
+
+      p {
+        font-size: 22px;
+        line-height: 1.5;
+      }
+
+      .siroaka {
+        font-size: 18px;
+      }
+
+      #infobtn-bg {
+        padding: 30px 0;
+        font-size: 30px;
+        margin: 60px 0;
+      }
+    }
+  }
+
+  .step-wrapper {
+    p {
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .steps {
+      display: flex;
+      justify-content: space-between;
+
+      .step {
+        width: 400px;
+        padding: 10px 40px;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+
+        .step-moji {
+          font-weight: bold;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+.merit-wrapper {
+  .three-merits {
+    .merit {
+      img {
+        width: 400px;
+        height: auto;
+      }
+      .mojicenter {
+        width: 300px;
+      }
+    }
+  }
+}
+  .menber-wrapper {
+    .menbers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .menber {
+        box-sizing: border-box;
+        width: 47%;
+        margin-top: 150px;
+        padding: 0 20px;
+        img {
+          $size: 150px;
+          width: $size;
+          height: $size;
+          top: -120px;
+        }
+      }
+    }
+  }
+
+  .sansya-wrapper {
+    .sansyanokore {
+      img {
+        $size: 200px;
+        width: $size;
+        height: $size;
+      }
+      .sansyamessage {
+        padding: 30px;
+        padding-right: 0;
+
+        p {
+          font-size: 18px;
+        }
+
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
   .tokuten-wrapper {
     p {
       font-size: 18px;
@@ -19,7 +126,7 @@ $orange: #ff7011;
 
       .tokutens {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
 
         .tokutenA {
           $size: 250px;
@@ -78,44 +185,14 @@ $orange: #ff7011;
     margin: 0 auto;
   }
 
-  .kaigyou {
-    display: none;
-  }
-
   @mixin kagikakko($color) {
     width: 80%;
-    padding: 25px 0px;
-    margin: 30px 0;
-    position: relative;
-    display: inline-block;
-  
-    &::before,
-    &::after {
-      content: "";
-      width: 30px;
-      height: 30px;
-      position: absolute;
-    }
-  
-    &::before {
-      border-left: solid 4px $color;
-      border-top: solid 4px $color;
-      top: 0;
-      left: 0;
-    }
-  
-    &::after {
-      border-right: solid 4px $color;
-      border-bottom: solid 4px $color;
-      bottom: 0;
-      right: 0;
-    }
   }
   
   .kagikakko {
     @include kagikakko(lighten($orange, 20%));
   }
-  
+
   .shirokagikakko {
     @include kagikakko(#fff);
   }
@@ -240,28 +317,9 @@ $orange: #ff7011;
   }
 
   .step-wrapper {
-    p {
-      span {
-        font-weight: bold;
-      }
-    }
-
     .steps {
-      display: flex;
-      justify-content: center;
-
       .step {
-        width: 400px;
         padding: 30px 40px;
-
-        &:not(:last-child) {
-          margin-right: 20px;
-        }
-
-        .step-moji {
-          font-weight: bold;
-          border-radius: 5px;
-        }
       }
     }
   }
@@ -289,7 +347,7 @@ $orange: #ff7011;
   .merit-wrapper {
     .three-merits {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       margin-bottom: 30px;
 
       .merit {
@@ -297,7 +355,7 @@ $orange: #ff7011;
         padding: 0 10px;
 
         img {
-          height: 200px;
+          width: 350px;
         }
       }
     }
@@ -328,15 +386,12 @@ $orange: #ff7011;
 
   .menber-wrapper {
     .menbers {
-      display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       .menber {
         box-sizing: border-box;
         width: 30%;
         padding: 0 30px;
         margin: 180px 20px 0;
-
         img {
           $size: 180px;
           width: $size;
@@ -360,18 +415,6 @@ $orange: #ff7011;
         $size: 230px;
         width: $size;
         height: $size;
-      }
-
-      .sansyamessage {
-        padding: 30px;
-
-        p {
-          font-size: 18px;
-        }
-
-        a {
-          font-size: 18px;
-        }
       }
     }
   }
@@ -436,50 +479,9 @@ $orange: #ff7011;
     }
 
     .saraniokuten {
-      .tokutenmoji {
-        width: 700px;
-        top: -20px;
-        font-size: 26px;
-      }
 
       .tokutens {
-        display: flex;
-        justify-content: space-around;
         padding: 0 60px;
-
-        .tokutenA {
-          $size: 250px;
-          width: $size;
-          height: $size;
-          box-sizing: border-box;
-          padding: 60px 0;
-          border-radius: 50%;
-          background: #fff;
-          display: initial;
-
-          .tokutenB {
-            color: lighten($orange, 20%);
-            $size: 80px;
-            width: $size;
-            height: 30px;
-          line-height: 1;
-
-            padding-bottom: 10px;
-            font-size: 20px;
-            font-weight: bold;
-            background: #fff;
-            color: lighten($orange, 10%);
-            border-radius: 0;
-            margin: 0 auto;
-          }
-
-          .tokutensetumei {
-            font-size: 16px;
-            padding: 10px 20px;
-            color: #333;
-            text-align: center;
-          }
-        }
       }
     }
   }
